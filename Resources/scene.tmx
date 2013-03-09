@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="96" height="64" tilewidth="10" tileheight="10">
+ <tileset firstgid="1" name="scene" tilewidth="10" tileheight="10">
+  <image source="C:/Users/lookof/Documents/me/props/scene.png" trans="4f93ff" width="960" height="640"/>
+ </tileset>
+ <tileset firstgid="6145" name="wall_floor" tilewidth="10" tileheight="10">
+  <image source="C:/Users/lookof/Documents/me/props/wall_floor.png" trans="4f93ff" width="960" height="640"/>
+ </tileset>
+ <objectgroup name="objects" width="96" height="64">
+  <object name="deckchair" x="390" y="405" width="212" height="113"/>
+  <object name="chair" x="716" y="401" width="82" height="118"/>
+  <object name="frame" x="175" y="277" width="86" height="99"/>
+  <object name="room" x="118" y="95" width="753" height="387"/>
+ </objectgroup>
+</map>
