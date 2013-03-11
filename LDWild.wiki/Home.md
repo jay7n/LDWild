@@ -1,7 +1,7 @@
 Welcome to the LDWild wiki!
 
 #Overview
->__LDWild__ is independent game developing project, which means " the Wild of a Lucid Dream ", also means "the Wild of a Loser's Dream". Note this is not the game name, but only a code name for the developing. 
+>__LDWild__ is an independent game developing project, which means " the Wild of a Lucid Dream ", also means "the Wild of a Loser's Dream". Note this is not the game name, but only a code name for the developing. 
 >
 >As a loser who's a rookie programmer in this reality, me, like most other guys, has a dream which is to make an independent game that could reflect the thought of myself.
 >
