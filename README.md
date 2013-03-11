@@ -1,3 +1,5 @@
+Welcome to the LDWild wiki!
+
 #Overview
 >__LDWild__ is an independent game developing project, which means " the Wild of a Lucid Dream ", also means "the Wild of a Loser's Dream". Note this is not the game name, but only a code name for the developing. 
 >
@@ -10,7 +12,10 @@
 ##Build
 >If you work on a Win7 OS with one suite of "visual studio 2008", it's fairly easy for you to build the project. Just clone the repo to your own path, and open "LDWild.sln" and execute build in it. The compiler will tell you there're many of __Warnings__. You can just ignore it, since they're all of the legacy issues of the evolution of _cocos2d-x_ engine,  and I'll eliminate them at some time I refactor or refine the code. 
 ##Run
->If you built it successfully, you can find it In "Bin" folder. There's one file you built out named "LDWild.win32.exe". That's it. Double click it and you'll see the result.
+>If you built it successfully, you can find it In "Bin" folder. There's one file you built out named "LDWild.win32.exe". That's it. Double click it and you'll see the result like this:
+>
+>![screenshot](https://raw.github.com/lookof/LDWild/develop/Resources/screenshot.png)
+
 ##Troubleshooting
 >Maybe you'll get troubles when you do some operations in the previous two steps(I guess probably this wouldn't happen, but I mean in case).
 >
