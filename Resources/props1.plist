@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>s_chair.png</key>
+            <key>chair</key>
             <dict>
                 <key>frame</key>
                 <string>{{410,2},{97,143}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{97,143}</string>
             </dict>
-            <key>s_deckchair.png</key>
+            <key>deckchair</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,764},{270,152}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{270,154}</string>
             </dict>
-            <key>s_frame.png</key>
+            <key>frame</key>
             <dict>
                 <key>frame</key>
                 <string>{{410,147},{93,105}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{93,107}</string>
             </dict>
-            <key>wall.png</key>
+            <key>wall</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{760,406}}</string>

@@ -26,4 +26,5 @@ Welcome to the LDWild wiki!
 #Lib Dependency
 
 * cocos2dx version = **[cocos2d-2.0-x-2.0.4](http://cocos2d-x.googlecode.com/files/cocos2d-2.0-x-2.0.4.zip)**
-* Box2D version = **Box2D_v2.2.1** 
+* Box2D version = **Box2D_v2.2.1**
+* Lua version = **lua 5.1**

@@ -5,6 +5,7 @@
 #include <libCompo/LDRoleMe.h>
 #include <libCompo/LDSubtitle.h>
 #include <libCompo/LDProp.h>
+#include <libCompo/LDLevelImporter.h>
 #include <libOrgan/LDLayers.h>
 #include <libOrgan/LDSceneMainTest.h>
 #include <libTest/TestSubtitleNLiteral.h>
@@ -80,52 +81,10 @@ void LDSceneMainTest::init(void)
       _me->GetCoSprite()->setPosition(startPos);
       masterLayer->AddSprite(_me);
       
-      //      LDSprite* wall = new LDSprite("wall", "wall.png");
-      LDSpriteLoader loader("props1.plist");
-      const char* aFewProps[]= {
-         "wall.png",
-         "s_frame.png",
-         "s_chair.png",
-         "s_deckchair.png"
-      };
-      int propSize = sizeof(aFewProps)/sizeof(aFewProps[0]);
-      for(int i=0; i<propSize; i++) {
-         
-      }
-      LDProp* wall = loader.LoadSprite<LDProp>("wall.png");
-      LDProp* frame = loader.LoadSprite<LDProp>("s_frame.png");
-      LDProp* chair = loader.LoadSprite<LDProp>("s_chair.png");
-      LDProp* deckchair = loader.LoadSprite<LDProp>("s_deckchair.png");
-      //      LDLabel* label = new LDLabel("this is a test");
       TestCase::TestSubtitleNLiteral();
-      LDTMXTiledMap ldMap;
-      if( ldMap.Open("scene.tmx") ) {
-         CoPoint pos = ldMap.GetObjectPosition("room", "objects");
-         wall->GetCoNode()->setPosition(pos);
-         pos = ldMap.GetObjectPosition("frame", "objects");
-         frame->GetCoNode()->setPosition(pos);
-         pos = ldMap.GetObjectPosition("chair", "objects");
-         chair->GetCoNode()->setPosition(pos);
-         pos = ldMap.GetObjectPosition("deckchair", "objects");
-         deckchair->GetCoNode()->setPosition(pos);
 
-         //         label->GetCoNode()->setPosition(pos);
-         //         CoColor3B c3;
-         //         c3.r=255; c3.g=255; c3.b=255;
-         //         label->GetCoLabelBMFont()->setColor(c3);
-      }
-      //masterLayer->AddSprite(wall);
-      masterLayer->AddSprite(frame);
-      masterLayer->AddSprite(chair);
-      masterLayer->AddSprite(deckchair);
-      //      masterLayer->AddSprite(label);
-      
-      LDB2Manager* ldb2Mgr = LDB2Manager::GetSingleton();
-      ldb2Mgr->CreateB2BodyTo(_me);
-      //ldb2Mgr->CreateB2BodyTo(wall);
-      ldb2Mgr->CreateB2BodyTo(frame);
-      ldb2Mgr->CreateB2BodyTo(chair);
-      ldb2Mgr->CreateB2BodyTo(deckchair);
+      LDLevelImporter levelImporter;
+      levelImporter.Import("lv1.lua", masterLayer, bgLayer);
    }
 }
 
