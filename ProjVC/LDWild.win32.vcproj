@@ -49,7 +49,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories=".;..\Classes;d:\HOME\LDWild\;d:\HOME\LDWild\LDWild;d:\HOME\LDWild\Thirdparty;&quot;d:\HOME\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\&quot;;&quot;d:\HOME\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\include&quot;;&quot;d:\HOME\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\kazmath\include&quot;;&quot;d:\HOME\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\platform\win32&quot;;&quot;d:\HOME\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\platform\third_party\win32&quot;;&quot;d:\HOME\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\platform\third_party\win32\OGLES&quot;;&quot;d:\HOME\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\external&quot;;&quot;d:\HOME\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\CocosDenshion\include&quot;"
+				AdditionalIncludeDirectories=".;..\Classes;d:\HOME\GitHub\LDWild\;d:\HOME\GitHub\LDWild\LDWild;d:\HOME\GitHub\LDWild\Thirdparty;&quot;d:\HOME\GitHub\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\&quot;;&quot;d:\HOME\GitHub\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\include&quot;;&quot;d:\HOME\GitHub\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\kazmath\include&quot;;&quot;d:\HOME\GitHub\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\platform\win32&quot;;&quot;d:\HOME\GitHub\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\platform\third_party\win32&quot;;&quot;d:\HOME\GitHub\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\cocos2dx\platform\third_party\win32\OGLES&quot;;&quot;d:\HOME\GitHub\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\external&quot;;&quot;d:\HOME\GitHub\LDWild\Thirdparty\cocos2d-2.0-x-2.0.4\CocosDenshion\include&quot;;d:\HOME\GitHub\LDWild\Thirdparty\lua\5.1\include"
 				PreprocessorDefinitions="WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -73,9 +73,9 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="libcocos2d.lib libExtensions.lib opengl32.lib glew32.lib libBox2d.lib libCocosDenshion.lib"
+				AdditionalDependencies="libcocos2d.lib libExtensions.lib opengl32.lib glew32.lib libBox2d.lib libCocosDenshion.lib lua5.1.lib"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="&quot;$(OutDir)&quot;;&quot;D:\HOME\cocos2d-2.0-x-2.0.4\cocos2d-2.0-x-2.0.4\Debug.win32&quot;"
+				AdditionalLibraryDirectories="&quot;$(OutDir)&quot;;&quot;D:\HOME\cocos2d-2.0-x-2.0.4\cocos2d-2.0-x-2.0.4\Debug.win32&quot;;D:\HOME\GitHub\LDWild\Thirdparty\lua\5.1\lib"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				TargetMachine="1"
@@ -252,6 +252,22 @@
 			</File>
 			<File
 				RelativePath="..\libOrgan\LDLayers.h"
+				>
+			</File>
+			<File
+				RelativePath="..\libCompo\LDLevelImporter.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\libCompo\LDLevelImporter.h"
+				>
+			</File>
+			<File
+				RelativePath="..\libBasic\LDLevelScriptLoader.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\libBasic\LDLevelScriptLoader.h"
 				>
 			</File>
 			<File

@@ -9,7 +9,7 @@ public:
    LDTMXTiledMap(void);
    ~LDTMXTiledMap(void);
    bool Open(const char* tmxFile);
-   CoPoint GetObjectPosition(const char* objName, const char* objGrpName = NULL);
+   CoPoint GetObjectPosition(const char* objName, const char* objGrpName = NULL) const;
 private:
    CoTMXTiledMap* _tMap;
 };
