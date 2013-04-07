@@ -32,7 +32,7 @@ bool LDTMXTiledMap::Open(const char* tmxFile)
 }
 
 CoPoint LDTMXTiledMap::GetObjectPosition(const char* objName,
-                                         const char* objGrpName)
+                                         const char* objGrpName) const
 {
    assert(_tMap);
    CoPoint ret(0,0);
